@@ -17,10 +17,10 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 HStack {
-                    TextField("Add todo", text: $newTodo)
+                    TextField("Add todo...", text: $newTodo)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .onSubmit(addTodo)
-                    Button(action: addTodo) { Text("Add") }
+                    Button("Add", action: addTodo)
                         .buttonStyle(.borderedProminent)
                 }
                 .padding([.leading, .trailing], 20)
