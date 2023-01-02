@@ -23,7 +23,7 @@ struct ContentView: View {
                     Button("Add", action: addTodo)
                         .buttonStyle(.borderedProminent)
                 }
-                .padding([.leading, .trailing], 20)
+                .padding([.leading, .trailing], 10)
                 .padding([.top, .bottom], 5)
                 List {
                     ForEach(todos) { item in
