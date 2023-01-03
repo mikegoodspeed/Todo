@@ -18,7 +18,7 @@ struct ContentView: View {
             VStack {
                 HStack {
                     TextField("Add todo...", text: $newTodo)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(.roundedBorder)
                         .onSubmit(addTodo)
                     Button("Add", action: addTodo)
                         .buttonStyle(.borderedProminent)
